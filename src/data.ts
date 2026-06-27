@@ -3,10 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 import product1 from './assets/product1.jpg';
-import product2 from './assets/product2.jpg';
-import product3 from './assets/product3.jpg';
 import product4 from './assets/product4.jpg';
-import product5 from './assets/product5.jpg';
 
 import {
   NavLink,
@@ -97,7 +94,7 @@ export const portfolioItems: PortfolioItem[] = [
     techStack: ['React', 'Tailwind CSS', 'Node.js', 'AWS'],
     services: ['UI/UX Design', 'Web Development', 'Project Management'],
     result: '55% Faster Load Speed',
-    liveUrl: 'https://acme-enterprise-demo.com',
+    liveUrl: '#',
   },
   {
     id: 'theracare',
@@ -106,11 +103,11 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'TheraCare Patient Portal',
     industry: 'Healthcare',
     description: 'A HIPAA-compliant patient care dashboard designed for clinic medical staff, streamlining medical records management and virtual appointment workflows.',
-    image: product2,
+    image: product4,
     techStack: ['React', 'Laravel', 'PostgreSQL', 'Tailwind CSS'],
     services: ['UI/UX Design', 'Custom Software Dev', 'Project Management'],
     result: '40% Faster Scheduling',
-    liveUrl: 'https://theracare-portal-demo.com',
+    liveUrl: '#com',
   },
   {
     id: 'edulearn',
@@ -119,11 +116,11 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'EduLearn Headless Academy',
     industry: 'Education',
     description: 'A dynamic educational portal with custom course builder, multi-instructor live streams, and interactive quizzing mechanisms built on a headless architecture.',
-    image: product3,
+    image: product1,
     techStack: ['WordPress', 'React', 'GraphQL', 'Tailwind CSS'],
     services: ['Web Development', 'UI/UX Design', 'SEO'],
     result: '+120% Course Signups',
-    liveUrl: 'https://edulearn-academy-demo.com',
+    liveUrl: '#',
   },
   {
     id: 'bistroflow',
@@ -136,7 +133,7 @@ export const portfolioItems: PortfolioItem[] = [
     techStack: ['Flutter', 'Node.js', 'MongoDB', 'Tailwind CSS'],
     services: ['Mobile App', 'UI/UX Design', 'Project Management'],
     result: '+45% Table Turnover',
-    liveUrl: 'https://bistroflow-app-demo.com',
+    liveUrl: '#',
   },
   {
     id: 'aura',
@@ -145,11 +142,11 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Aura Cosmetics Store',
     industry: 'Retail',
     description: 'A fast, content-driven headless Shopify storefront designed for a luxury cosmetics brand, optimized for rich visual storytelling and checkout conversions.',
-    image: product5,
+    image: product1,
     techStack: ['Shopify', 'React', 'Tailwind CSS', 'GraphQL'],
     services: ['UI/UX Design', 'Web Development', 'SEO'],
     result: '+250% Sales Growth',
-    liveUrl: 'https://aura-cosmetics-demo.com',
+    liveUrl: '#',
   },
   {
     id: 'zenith',
@@ -158,10 +155,11 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'Zenith Industrial ERP',
     industry: 'Manufacturing',
     description: 'A comprehensive UI/UX redesign and front-end system overhaul for a heavy machinery manufacturer\'s supply-chain tracking portal.',
-    image: product1,
+    image: product4,
     techStack: ['React', 'Node.js', 'Tailwind CSS', 'D3.js'],
     services: ['UI/UX Design', 'Web Development', 'Project Management'],
     result: '+65% Operator Efficiency',
+     liveUrl: '#',
   },
 ];
 
