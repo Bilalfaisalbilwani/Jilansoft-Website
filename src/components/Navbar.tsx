@@ -100,16 +100,7 @@ export default function Navbar() {
               {theme === 'light' ? <Moon size={16} /> : <Sun size={16} />}
             </button>
 
-            <button
-              onClick={() => window.dispatchEvent(new CustomEvent('open-conversion-modal'))}
-              className={`px-5 py-2.5 rounded-lg text-sm font-semibold border transition cursor-pointer ${
-                theme === 'light'
-                  ? 'border-slate-200 text-slate-600 hover:border-blue-600 hover:bg-slate-50 hover:text-blue-600'
-                  : 'border-[#7C3AED]/20 text-[#A09BB8] hover:border-[#A855F7] hover:bg-[#7C3AED]/8 hover:text-white'
-              }`}
-            >
-              Free Audit
-            </button>
+           
             <a
               href="#contact"
               className={`px-6 py-2.5 rounded-lg text-sm font-semibold hover:-translate-y-0.5 active:translate-y-0 transition shadow-lg cursor-pointer ${
@@ -173,35 +164,7 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
-          </div>
-
-          {/* Action buttons with absolute responsive flow and beautiful spacing */}
-          <div className="flex flex-col sm:flex-row items-center gap-4 mt-auto pb-12 w-full max-w-sm mx-auto">
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                window.dispatchEvent(new CustomEvent('open-conversion-modal'));
-              }}
-              className={`w-full text-center py-3.5 rounded-lg font-semibold border transition whitespace-nowrap cursor-pointer ${
-                theme === 'light'
-                  ? 'border-slate-200 text-slate-700 bg-slate-100 hover:bg-slate-200'
-                  : 'border-purple-500/20 text-[#F0EDFF] bg-[#111128]/80 hover:bg-purple-500/8 hover:border-[#111128]'
-              }`}
-            >
-              Free Audit
-            </button>
-            <a
-              href="#contact"
-              onClick={() => setMobileMenuOpen(false)}
-              className={`w-full text-center py-3.5 rounded-lg font-semibold shadow-lg hover:scale-[1.02] active:scale-100 transition whitespace-nowrap cursor-pointer ${
-                theme === 'light'
-                  ? 'bg-gradient-to-r from-blue-600 to-indigo-500 text-white shadow-blue-500/25 hover:shadow-blue-500/35'
-                  : 'bg-gradient-to-r from-[#7C3AED] to-[#A855F7] text-white shadow-purple-500/35 hover:shadow-purple-500/50'
-              }`}
-            >
-              Start a Project
-            </a>
-          </div>
+          </div>         
         </div>
       )}
     </>

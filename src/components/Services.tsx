@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { ArrowRight, Globe, Smartphone, Palette, TrendingUp, Gem, Megaphone } from 'lucide-react';
+import { ArrowRight, Globe, Smartphone,  ShoppingCart,Code,Palette, TrendingUp, Gem, Megaphone } from 'lucide-react';
 import { services } from '../data';
 import { useTheme } from './ThemeContext';
 
@@ -16,6 +16,8 @@ const iconMap: Record<string, React.ReactNode> = {
   '📈': <TrendingUp className="text-[#A855F7]" size={24} />,
   '💎': <Gem className="text-[#A855F7]" size={24} />,
   '🚀': <Megaphone className="text-[#A855F7]" size={24} />,
+  '🛒': <ShoppingCart className="text-[#A855F7]" size={24} />,
+  '💻': <Code className="text-[#A855F7]" size={24} />,
 };
 
 export default function Services() {
@@ -76,9 +78,12 @@ export default function Services() {
               </div>
 
               {/* Read More button */}
-              <div className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#A855F7] group-hover:gap-2.5 transition-all">
-                Explore service <ArrowRight size={14} />
-              </div>
+          <a
+  href="#contact"
+  className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-[#A855F7] hover:text-[#7C3AED] group-hover:gap-2.5 transition-all duration-200 hover:underline"
+>
+  Send Inquiry <ArrowRight size={14} />
+</a>
             </div>
           ))}
         </div>

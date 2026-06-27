@@ -4,7 +4,6 @@
  */
 import product1 from './assets/product1.jpg';
 import product4 from './assets/product4.jpg';
-
 import {
   NavLink,
   StatItem,
@@ -16,9 +15,11 @@ import {
 } from './types';
 
 export const navLinks: NavLink[] = [
+  { label: 'Home', href: '#hero' },
+  { label: 'About', href: '#about' },
   { label: 'Services', href: '#services' },
   { label: 'Work', href: '#work' },
-  { label: 'Process', href: '#process' },
+  // { label: 'Process', href: '#process' },
   { label: 'Pricing', href: '#pricing' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -37,9 +38,9 @@ export const trustedLogos: string[] = [
 ];
 
 export const heroStats: StatItem[] = [
-  { number: '200+', label: 'Projects Delivered' },
-  { number: '98%', label: 'Client Satisfaction' },
-  { number: '8yr', label: 'Industry Expertise' },
+  { number: '2009', label: 'ESTABLISHED' },
+  { number: '500', label: 'CLIENTS/USERS' },
+  { number: '11', label: 'SERVED BUSINESS TYPES' },
 ];
 
 export const values: string[] = [
@@ -50,36 +51,22 @@ export const values: string[] = [
 ];
 
 export const services: ServiceItem[] = [
-  {
-    icon: '🌐',
-    title: 'Web Development',
-    description: 'Performance-first websites and web applications built with modern stacks. From landing pages to complex SaaS platforms.',
-  },
-  {
-    icon: '📱',
-    title: 'App Development',
-    description: 'Cross-platform mobile apps engineered for scale. Native performance with React Native and Flutter.',
-  },
-  {
-    icon: '🎨',
-    title: 'UI/UX Design',
-    description: 'Research-driven interfaces that feel intuitive and look stunning. We design for conversion, not just aesthetics.',
-  },
-  {
-    icon: '📈',
-    title: 'SEO & Growth',
-    description: 'Data-backed strategies that compound over time. Technical SEO, content architecture, and organic acquisition systems.',
-  },
-  {
-    icon: '💎',
-    title: 'Brand Identity',
-    description: 'From naming to visual systems, we craft brand identities that resonate and remain consistent across every touchpoint.',
-  },
-  {
-    icon: '🚀',
-    title: 'Digital Marketing',
-    description: 'Paid media, email automation, and retention strategies that turn your marketing budget into measurable ROI.',
-  },
+ {
+  icon: '🌐',
+  title: 'Web Development',
+  description: 'We build high-performance websites and web applications using modern technologies. From conversion-focused landing pages to scalable SaaS platforms built for growth.'
+},
+{
+  icon: '🛒',
+  title: 'E-Commerce Solutions',
+  description: 'We design and develop high-converting online stores using Shopify, WordPress, and custom solutions. Optimized for speed, user experience, and maximum sales.'
+},
+{
+  icon: '💻',
+  title: 'Custom Software Development',
+  description: 'Tailored software solutions designed to automate business processes, improve efficiency, and support scalable long-term growth for startups and enterprises.'
+}
+
 ];
 
 export const portfolioItems: PortfolioItem[] = [

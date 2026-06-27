@@ -11,7 +11,7 @@ import About from './components/About';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Stats from './components/Stats';
-import Process from './components/Process';
+// import Process from './components/Process';
 import Testimonials from './components/Testimonials';
 import Pricing from './components/Pricing';
 import Contact from './components/Contact';
@@ -50,7 +50,7 @@ function AppContent() {
         <Stats />
         
         {/* Connected workflows pipeline */}
-        <Process />
+        {/* <Process /> */}
         
         {/* Client feedbacks testimonials slider */}
         <Testimonials />
