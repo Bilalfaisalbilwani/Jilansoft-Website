@@ -17,10 +17,10 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>(() => {
     try {
-      const saved = localStorage.getItem('nexus-theme');
-      return (saved as Theme) || 'light'; // default to light
+      const saved = localStorage.getItem('nexus-theme-v2');
+      return (saved as Theme) || 'dark'; // default to dark
     } catch (e) {
-      return 'light';
+      return 'dark';
     }
   });
 
@@ -34,7 +34,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
       root.style.colorScheme = 'dark';
     }
     try {
-      localStorage.setItem('nexus-theme', theme);
+      localStorage.setItem('nexus-theme-v2', theme);
     } catch (e) {
       // Ignore security errors in sandboxed iframes
     }

@@ -11,11 +11,12 @@ import About from './components/About';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Stats from './components/Stats';
-// import Process from './components/Process';
 import Testimonials from './components/Testimonials';
 import Pricing from './components/Pricing';
+import Faq from './components/Faq';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import ConversionModal from './components/ConversionModal';
 
 function AppContent() {
   const { theme } = useTheme();
@@ -49,15 +50,16 @@ function AppContent() {
         {/* Overall achievements metrics */}
         <Stats />
         
-        {/* Connected workflows pipeline */}
-        {/* <Process /> */}
         
         {/* Client feedbacks testimonials slider */}
         <Testimonials />
         
         {/* Pricing models */}
         <Pricing />
-      
+
+        
+        {/* Frequently Asked Questions */}
+        <Faq />
         
         {/* Responsive interactive channels and contacts form */}
         <Contact />
@@ -67,7 +69,7 @@ function AppContent() {
       <Footer />
 
       {/* High-conversion automated lead generation modal */}
-    
+      <ConversionModal />
     </div>
   );
 }

@@ -6,6 +6,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, Sparkles, CheckSquare, Gift, ArrowRight } from 'lucide-react';
 import { useTheme } from './ThemeContext';
+import { form } from 'motion/react-client';
 
 export default function ConversionModal() {
   const { theme } = useTheme();

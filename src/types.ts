@@ -32,6 +32,53 @@ export interface PortfolioItem {
   result?: string;
   liveUrl?: string;
   gradient?: string;
+  
+  // Case Study fields
+  heroImage: string;
+  galleryImages: string[];
+  mobileScreenshots?: string[];
+  dashboardScreenshots?: string[];
+  problem: {
+    clientIntro: string;
+    challenges: string[];
+    goals: string[];
+  };
+  solution: {
+    overview: string;
+    keyImplementations: {
+      title: string;
+      description: string;
+      iconName?: string;
+    }[];
+  };
+  features: {
+    title: string;
+    description: string;
+    iconName?: string;
+  }[];
+  timeline: {
+    phase: string;
+    duration: string;
+    description: string;
+  }[];
+  testimonial: {
+    quote: string;
+    author: string;
+    role: string;
+    company: string;
+    avatarUrl?: string;
+    rating: number;
+  };
+  statistics: {
+    label: string;
+    value: string;
+    change?: string;
+    iconName?: string;
+  }[];
+  client: string;
+  year: string;
+  duration: string;
+  teamSize: string;
 }
 
 export interface ProcessStep {
